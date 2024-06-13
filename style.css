@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #2582ce;
+    --secondary-color: #77a8d8;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white-color: #fff;
+    --hover-color: #555;
+}
+
+    body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.container h2 {
+    text-transform: uppercase;
+}
+
+/* Header styles */
+header {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding-top: 20px;
+    min-height: 50px;
+    border-bottom: var(--secondary-color) 3px solid;
+}
+
+header #branding {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+header nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main styles */
+.hero {
+    background: url('images/eibner-saliba-3T9dDY0WqDI-unsplash.jpg') no-repeat center center/cover;
+    height: 500px;
+    color: var(--white-color);
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero .cta {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero .cta:hover {
+    background: var(--hover-color);
+}
+
+/* Section styles */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.attractions, .activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.attraction, .activity {
+    flex: 1 1 30%;
+    background: var(--white-color);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.attraction img, .activity img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.attraction h3, .activity h3 {
+    margin: 10px 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer styles */
+footer {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+footer .social-media a:hover {
+    color: var(--secondary-color);
+}
